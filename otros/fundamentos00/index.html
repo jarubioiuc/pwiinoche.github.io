@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fundamentos de JS</title>
+    <script>
+      /*
+        JavaScript es un lenguaje de programación muy popular que tiene una amplia gama de aplicaciones.
+        Antes, JavaScript solo se utilizaba para hacer las páginas web interactivas: como la validación de formularios,
+        la animación, etc. Hoy en día, JavaScript también se utiliza en muchas otras áreas como el desarrollo
+        del lado del servidor, el desarrollo de aplicaciones móviles, etc.
+        Debido a su amplia gama de aplicaciones, puede ejecutar JavaScript de varias maneras:
+          -->Usando la pestaña de consola de los navegadores web
+              F12:
+                console.log('Hola Mundo'); + Enter
+          -->Utilizando Node.js
+              Instalando la ultima version de  Node.js
+              se crea un archvo con extension: .js  ej: hello.js
+                console.log('Hola Mundo');
+              y se ejecuta por consola con la instrucción:
+                node hello.js
+          -->Creando páginas web
+              la forma en que se esta creando este Script
+              <script type="text/javascript"> algunos navegadores no admiten es instruccion por razones de compatibilidad
+      */
+      var linebreak = '<br />';
+      document.write('Esto es Javascript');
+      document.write(linebreak);
+      //mensaje por consola
+      console.log('Mensaje por consola');
+
+      //definicion de variables:
+      //En programación, una variable es un contenedor (un espacio de memoria) para guardar datos.
+
+      var a;
+      let b;
+
+      //var: se utiliza en las versiones antiguas de JavaScript - var: tiene ámbito de función
+      //let es la nueva forma de declarar variables a partir de ES6 (ES2015). - let: tiene alcance de bloque
+      //Se recomienda utilizar let en lugar de var. Sin embargo, hay algunos navegadores que no soportan let.
+      //Utilizamos el operador de asignación = para asignar un valor a una variable.
+      a = 1;
+      b = 2;
+      //En JavaScript, es posible declarar variables en una única sentencia.
+      let c = 3, d = 4, e = 5;
+      //Si se define una variable sin inicializarla, tendrá un valor: undefined
+      var f;
+      document.write(f);
+      document.write(linebreak);
+      //Es posible cambiar el valor almacenado en la variable.
+      // 5 es asignado a la variable g
+      let g = 6;
+      document.write(g); // 6
+      document.write(linebreak);
+      // valor de la variable g es cambiado
+      g = 0;
+      document.write(g); // 0
+      document.write(linebreak);
+      //Reglas que se utilizan para nombrar variables:
+      let h = 'hola1';
+      document.write(h);
+      document.write(linebreak);
+      let _h = 'hola2';
+      document.write(_h);
+      document.write(linebreak);
+      let $h = 'hola3';
+      document.write($h);
+      document.write(linebreak);
+      //Los nombres de las variables no pueden empezar por números.
+      //Let 1h = 'hola'; // muestra un Error!
+      //distingue entre mayúsculas y minúsculas. Así que i y I son variables diferentes.
+      let i = "hola4";
+      let I = 7;
+      document.write(i);
+      document.write(linebreak);
+      document.write(I);
+      document.write(linebreak);
+      //Las palabras clave no pueden utilizarse como nombres de variables.
+      //let new = 5; // muestra un Error!
+      //La palabra clave: const se introdujo en la versión ES6(ES2015) para crear constantes.
+      const j = 8;
+      //j = 9; // muestra un Error!, el valor de una constante no se puede cambiar.
+      //no se puede declarar una constante sin inicializarla.
+      //const k;  // muestra un Error! Falta inicializar la constante.
+      //k = 5;
+      // se debe tener en cuenta que hay algunos navegadores que no soportan: const
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
